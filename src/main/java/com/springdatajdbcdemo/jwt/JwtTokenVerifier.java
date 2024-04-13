@@ -38,12 +38,6 @@ public class JwtTokenVerifier extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-        //Skipping JWT Authentication for public urls
-//        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-//        if (authentication == null){
-//            filterChain.doFilter(request, response);
-//            return;
-//        }
 
         // JWT token generation for any protected urls
         String token = request.getHeader("Authorization");
