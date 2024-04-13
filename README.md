@@ -85,10 +85,10 @@ PUT - "api/v1/management/roles/{role_id}" <br>
 <br>
 PUT - "api/v1/students/{id}" <br>
 {<br>
-    "firstname": "Javoxir", <br>
-    "lastname": "Farxodov", <br>
-    "birth_date": "1998-08-02", <br>
-    "address": "22 Uchtepa" <br>
+    "firstname": "Firstname", <br>
+    "lastname": "Lastname", <br>
+    "birth_date": "1990-01-01", <br>
+    "address": "22 Galaxy" <br>
 } <br>
 GET - "api/v1/students/{id}" <br>
 DELETE - "api/v1/students/{id}" <br>
