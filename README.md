@@ -37,7 +37,7 @@ POST - "api/v1/management/users/enable/{id}" <br>
 POST - "api/v1/management/users/disable/{id}" <br>
 
 
-### 2). Work with the student schedule <br>
+### 2). Work with the Student table <br>
 GET - "api/v1/management/students" <br>
 GET - "api/v1/management/students/{id}" <br>
 GET - "api/v1/management/students/by?name=..." <br>
