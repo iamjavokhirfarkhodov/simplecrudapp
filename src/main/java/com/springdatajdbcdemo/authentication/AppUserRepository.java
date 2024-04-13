@@ -12,6 +12,4 @@ public interface AppUserRepository {
 
     List<Roles> getRolesByUsername(String username);
 
-//    int create(UserDTO userDTO);
-
 }
