@@ -21,8 +21,4 @@ public class AppUserService implements UserDetailsService {
         return appUserRepository.getUserByUserName(username);
     }
 
-//    public ResponseEntity<?> createUser(UserDTO userDTO){
-//        appUserRepository.create(userDTO);
-//        return ResponseEntity.status(201).body("");
-//    }
 }
