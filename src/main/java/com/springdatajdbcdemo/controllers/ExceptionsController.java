@@ -16,11 +16,6 @@ import java.sql.SQLException;
 @RestControllerAdvice
 public class ExceptionsController {
 
-//    private AuthException authException;
-//
-//    public ExceptionsController(@Qualifier("authException") AuthException authException) {
-//        this.authException = authException;
-//    }
 
     @ExceptionHandler(JwtException.class)
     public ResponseEntity<String> jwtExpired(JwtException e) {
