@@ -3,105 +3,106 @@
 Login is required to use the APIs. A JWT token is automatically assigned to the user upon successful login, and all subsequent requests are processed only if the token is found. Otherwise, the server will return a 403 response. <br>
 
 POST - "/login" <br>
-{
-    "username": "superadmin",
-    "password": "123456"
-}
-{
-    "username": "admin",
-    "password": "1234567"
-}
-{
-	".......": "......"
-}
+{<br>
+    "username": "superadmin",<br>
+    "password": "123456"<br>
+}<br>
+{<br>
+    "username": "admin",<br>
+    "password": "1234567"<br>
+}<br>
+{<br>
+	".......": "......"<br>
+}<br>
 
-The system has 3 main API routes
-- "api/v1/management/**"
-- "api/v1/students/**"
-- "signup/student"
+The system has 3 main API routes <br>
+- "api/v1/management/**" <br>
+- "api/v1/students/**" <br>
+- "signup/student" <br>
 
+<br>
+<br>
 
-
-/* MANAGEMENT */
-"api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them
-
-1). Working with the Users table.
-POST - "api/v1/management/users/create"
-Authorization - <jwt_token>
-{
-    "username": "....",
-    "password": "...."
-}
-POST - "api/v1/management/users/enable/{id}"
-POST - "api/v1/management/users/disable/{id}"
-
-
-2). Work with the student schedule
-GET - "api/v1/management/students"
-GET - "api/v1/management/students/{id}"
-GET - "api/v1/management/students/by?name=..."
-Param
-name = "..."
+## MANAGEMENT <br>
+"api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them <br>
+<br>
+### 1). Working with the Users table.<br>
+POST - "api/v1/management/users/create" <br>
+Authorization - <jwt_token> <br>
+{<br>
+    "username": "....",<br>
+    "password": "...."<br>
+}<br>
+POST - "api/v1/management/users/enable/{id}" <br>
+POST - "api/v1/management/users/disable/{id}" <br>
 
 
-3). Work with the faculty table
-POST - "api/v1/management/faculties"
-{
-	"name": "....."
-}
-GET - "api/v1/management/faculties"
-GET - "api/v1/management/faculties/{id}"
-DELETE - "api/v1/management/faculties/{id}"
-PUT - "api/v1/management/faculties/{id}"
-{
-    "name": "....."
-}
+### 2). Work with the student schedule <br>
+GET - "api/v1/management/students" <br>
+GET - "api/v1/management/students/{id}" <br>
+GET - "api/v1/management/students/by?name=..." <br>
+Param<br>
+name = "..." <br>
 
 
-4). Working with the table of roles
-
-POST - "api/v1/management/roles"
-{
-	"name": "ROLE_NAME"
-}
-
-POST - "api/v1/management/roles/assign/{user_id}"
-{
-	"id": ...
-}
-DELETE - "api/v1/management/roles/remove/{user_id}"
-{
-	"id": ...
-}
-GET - "api/v1/management/roles"
-GET - "api/v1/management/roles/{role_id}"
-DELETE - "api/v1/management/roles/{role_id}"
-PUT - "api/v1/management/roles/{role_id}"
+### 3). Work with the faculty table <br>
+POST - "api/v1/management/faculties"<br>
+{<br>
+	"name": "....."<br>
+}<br>
+GET - "api/v1/management/faculties" <br>
+GET - "api/v1/management/faculties/{id}" <br>
+DELETE - "api/v1/management/faculties/{id}" <br>
+PUT - "api/v1/management/faculties/{id}" <br>
+{<br>
+    "name": "....." <br>
+}<br>
 
 
-/* STUDENTS */
-"api/v1/students/**" - With this API, students can get their data, change it and launch their account.
+### 4). Working with the table of roles <br>
+<br>
+POST - "api/v1/management/roles" <br>
+{<br>
+	"name": "ROLE_NAME" <br>
+}<br>
+<br>
+POST - "api/v1/management/roles/assign/{user_id}" <br>
+{<br>
+	"id": ... <br>
+}<br>
+DELETE - "api/v1/management/roles/remove/{user_id}" <br>
+{<br>
+	"id": ... <br>
+}<br>
+GET - "api/v1/management/roles" <br>
+GET - "api/v1/management/roles/{role_id}" <br>
+DELETE - "api/v1/management/roles/{role_id}" <br>
+PUT - "api/v1/management/roles/{role_id}" <br>
 
-PUT - "api/v1/students/{id}"
-{
-    "firstname": "Javoxir",
-    "lastname": "Farxodov",
-    "birth_date": "1998-08-02",
-    "address": "22 Uchtepa"
-}
-GET - "api/v1/students/{id}"
-DELETE - "api/v1/students/{id}"
 
-/* SIGNUP */
-"signup/student" - This API is open to everyone for student registration.
+## STUDENTS <br>
+"api/v1/students/**" - With this API, students can get their data, change it and launch their account. <br>
+<br>
+PUT - "api/v1/students/{id}" <br>
+{<br>
+    "firstname": "Javoxir", <br>
+    "lastname": "Farxodov", <br>
+    "birth_date": "1998-08-02", <br>
+    "address": "22 Uchtepa" <br>
+} <br>
+GET - "api/v1/students/{id}" <br>
+DELETE - "api/v1/students/{id}" <br>
 
-POST - "signup/student"
-{
-    "username": "....",
-    "password": "....",
-    "firstname": "....",
-    "lastname": "....",
-    "birth_date": "....",
-    "faculty": ....,
-    "address": "...."
+## SIGNUP <br>
+"signup/student" - This API is open to everyone for student registration. <br>
+
+POST - "signup/student" <br>
+{<br>
+    "username": "....", <br>
+    "password": "....", <br>
+    "firstname": "....", <br>
+    "lastname": "....", <br>
+    "birth_date": "....", <br>
+    "faculty": ...., <br>
+    "address": "...." <br>
 }
