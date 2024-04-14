@@ -90,32 +90,32 @@ The system has 3 main API routes <br>
 
 	<details>
 	<summary>Students</summary>
-	"api/v1/students/**" - With this API, students can get their data, change it and launch their account. <br>
-	<br>
-	PUT - "api/v1/students/{id}" <br>
-	{<br>
-	    "firstname": "Firstname", <br>
-	    "lastname": "Lastname", <br>
-	    "birth_date": "1990-01-01", <br>
-	    "address": "22 Galaxy" <br>
-	} <br>
-	GET - "api/v1/students/{id}" <br>
-	DELETE - "api/v1/students/{id}" <br>
+		"api/v1/students/**" - With this API, students can get their data, change it and launch their account. <br>
+		<br>
+		PUT - "api/v1/students/{id}" <br>
+		{<br>
+		    "firstname": "Firstname", <br>
+		    "lastname": "Lastname", <br>
+		    "birth_date": "1990-01-01", <br>
+		    "address": "22 Galaxy" <br>
+		} <br>
+		GET - "api/v1/students/{id}" <br>
+		DELETE - "api/v1/students/{id}" <br>
 	</details>
 	
 	<details>
 	<summary>Sign UP</summary>
-	<h3>"signup/student" - This API is open to everyone for student registration. </h3>
-	
-	POST - "signup/student" <br>
-	{<br>
-	    "username": "....", <br>
-	    "password": "....", <br>
-	    "firstname": "....", <br>
-	    "lastname": "....", <br>
-	    "birth_date": "....", <br>
-	    "faculty": ...., <br>
-	    "address": "...." <br>
-	}
+		<h3>"signup/student" - This API is open to everyone for student registration. </h3>
+		
+		POST - "signup/student" <br>
+		{<br>
+		    "username": "....", <br>
+		    "password": "....", <br>
+		    "firstname": "....", <br>
+		    "lastname": "....", <br>
+		    "birth_date": "....", <br>
+		    "faculty": ...., <br>
+		    "address": "...." <br>
+		}
 	</details>
 </details>
