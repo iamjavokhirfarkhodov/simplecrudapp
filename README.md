@@ -121,7 +121,7 @@ Login is required to use the APIs. A JWT token is automatically assigned to the 
 <h1>Used technologies</h1>
 <div style="display:flex; gap: 5px;">
 <img src="./src/main/resources/static/java.png" alt="Description of the image" width="150" height="100">
-<img src="./src/main/resources/static/spring.png" alt="Description of the image" width="200" height="100">
+<img src="./src/main/resources/static/spring.png" alt="Description of the image" width="150" height="100">
 <img src="./src/main/resources/static/postgres.png" alt="Description of the image" width="200" height="100">
 <img src="./src/main/resources/static/jwt.png" alt="Description of the image" width="200" height="100">
 </div>
