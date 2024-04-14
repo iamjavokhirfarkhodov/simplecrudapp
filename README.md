@@ -125,3 +125,19 @@ Login is required to use the APIs. A JWT token is automatically assigned to the 
 <img src="./src/main/resources/static/postgres.png" alt="Description of the image" width="200" height="100">
 <img src="./src/main/resources/static/jwt.png" alt="Description of the image" width="200" height="100">
 </div>
+<details>
+	<summary>Dependencies tree</summary>
+	|_ _ _ spring-boot-starter-data-jpa
+	|
+	|_ _ _ spring-boot-starter-security
+	|
+	|_ _ _ jjwt-api
+	|
+	|_ _ _ postgresql
+	|
+	|_ _ _ projectlombok
+	|
+	|_ _ _ spring-boot-starter-test
+	|
+	|_ _ _ spring-boot-starter-web
+</details>
