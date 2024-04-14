@@ -25,7 +25,7 @@ Login is required to use the APIs. A JWT token is automatically assigned to the 
 	</p>
 </details>
 <details>
-	<summary>Management</summary>
+	<summary><strong>Management</strong></summary>
 	<p>"api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them</p>
 	<details>
 		<summary>Working with Users table.</summary>
@@ -87,7 +87,7 @@ Login is required to use the APIs. A JWT token is automatically assigned to the 
 	</details>
 </details>
 <details>
-	<summary>Students</summary>
+	<summary><strong>Students</strong></summary>
 	<p>"api/v1/students/**" - With this API, students can get their data, change it and launch their account.</p>
 	<p>PUT - "api/v1/students/{id}" <br>
 	{<br>
@@ -101,7 +101,7 @@ Login is required to use the APIs. A JWT token is automatically assigned to the 
 	<p>DELETE - "api/v1/students/{id}"</p>
 </details>
 <details>
-	<summary>Sign UP</summary>
+	<summary><strong>Sign UP</strong></summary>
 	<p>"signup/student" - This API is open to everyone for student registration.</p>	
 	</p>POST - "signup/student"<br>
 	{<br>
