@@ -29,11 +29,12 @@ The system has 3 main API routes <br>
 	<details>
 		<summary>Working with Users table.</summary>
 		<p>POST - "api/v1/management/users/create"</p>
-		<p>Authorization - <jwt_token> </p>
-		<p>{</p>
-		<p>"username": "....",</p>
-		<p>"password": "...."</p>
-		<p>}</p>
+		<p>Authorization - "jwt_token"<br>
+		{<br>
+		"username": "....",<br>
+		<p>"password": "...."<br>
+		}<br>
+		</p>
 		<p>POST - "api/v1/management/users/enable/{id}"</p>
 		<p>POST - "api/v1/management/users/disable/{id}"</p>
 	</details>
@@ -41,11 +42,12 @@ The system has 3 main API routes <br>
 		<summary>Working with Student table</summary>
 		<p>GET - "api/v1/management/students"</p>
 		<p>GET - "api/v1/management/students/{id}"</p>
-		<p>GET - "api/v1/management/students/by?name=..."</p>
-		<p>Param name = "..."</p>
+		<p>GET - "api/v1/management/students/by?name=..."<br>
+		Param name = "..."<br>
+		</p>
 	</details>
 	<details>
-		<summary>Work with the faculty table</summary>
+		<summary>Working with the faculty table</summary>
 		<p>POST - "api/v1/management/faculties"<br>
 		{<br>
 		"name": "....."<br>
