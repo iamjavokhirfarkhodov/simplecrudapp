@@ -27,10 +27,10 @@ The system has 3 main API routes <br>
 <details>
 <summary><strong>Available endpoints</strong></summary>
 <details>
-<summary>MANAGEMENT </summary><br>
+<summary>Management</summary>
 "api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them <br>
 <br>
-### 1). Working with the Users table.
+1). Working with the Users table.
 POST - "api/v1/management/users/create" <br>
 Authorization - <jwt_token> <br>
 {<br>
@@ -41,7 +41,7 @@ POST - "api/v1/management/users/enable/{id}" <br>
 POST - "api/v1/management/users/disable/{id}" <br>
 </details>
 <details>
-<summary>### 2). Work with the Student table</summary>summary>
+<summary>2). Work with the Student table</summary>summary>
 GET - "api/v1/management/students" <br>
 GET - "api/v1/management/students/{id}" <br>
 GET - "api/v1/management/students/by?name=..." <br>
@@ -50,7 +50,7 @@ name = "..." <br>
 </details>
 
 <details>
-<summary>### 3). Work with the faculty table</summary>summary>
+<summary>3). Work with the faculty table</summary>summary>
 POST - "api/v1/management/faculties"<br>
 {<br>
 	"name": "....."<br>
@@ -65,7 +65,7 @@ PUT - "api/v1/management/faculties/{id}" <br>
 </details>
 
 <details>
-<summary>### 4). Working with the table of roles </summary>
+<summary>4). Working with the table of roles </summary>
 <br>
 POST - "api/v1/management/roles" <br>
 {<br>
@@ -86,7 +86,7 @@ DELETE - "api/v1/management/roles/{role_id}" <br>
 PUT - "api/v1/management/roles/{role_id}" <br>
 </details>
 <details>
-<summary>## STUDENTS</summary>
+<summary><strong>Students</strong></summary>
 "api/v1/students/**" - With this API, students can get their data, change it and launch their account. <br>
 <br>
 PUT - "api/v1/students/{id}" <br>
