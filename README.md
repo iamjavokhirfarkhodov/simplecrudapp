@@ -100,8 +100,8 @@ GET - "api/v1/students/{id}" <br>
 DELETE - "api/v1/students/{id}" <br>
 </details>
 <details>
-<summary>## SIGNUP</summary>
-"signup/student" - This API is open to everyone for student registration. <br>
+<summary>Sign UP</summary>
+<h3>"signup/student" - This API is open to everyone for student registration. </h3>
 
 POST - "signup/student" <br>
 {<br>
