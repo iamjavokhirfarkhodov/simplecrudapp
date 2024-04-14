@@ -51,7 +51,7 @@ The system has 3 main API routes <br>
 		</details>
 
 		<details>
-		<summary>3). Work with the faculty table</summary>summary>
+		<summary>3). Work with the faculty table</summary>
 			POST - "api/v1/management/faculties"<br>
 			{<br>
 			"name": "....."<br>
