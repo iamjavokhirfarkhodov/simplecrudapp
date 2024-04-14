@@ -1,4 +1,6 @@
-# API Documentation
+<h1>About</h1>
+<p>Simples CRUD application using Java and Spring Boot</p>
+<h1>API Documentation</h1>
 
 Login is required to use the APIs. A JWT token is automatically assigned to the user upon successful login, and all subsequent requests are processed only if the token is found. Otherwise, the server will return a 403 response. <br>
 
