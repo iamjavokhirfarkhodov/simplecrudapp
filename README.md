@@ -47,7 +47,7 @@ The system has 3 main API routes <br>
 		</p>
 	</details>
 	<details>
-		<summary>Working with the faculty table</summary>
+		<summary>Working with Faculty table</summary>
 		<p>POST - "api/v1/management/faculties"<br>
 		{<br>
 		"name": "....."<br>
@@ -61,5 +61,27 @@ The system has 3 main API routes <br>
 		"name": "....."<br>
 		}<br>
 		</p>
+	</details>
+	<details>
+		<summary>Working with Roles table </summary>
+		<p>POST - "api/v1/management/roles"<br>
+		{<br>
+		"name": "ROLE_NAME" <br>
+		}<br>
+		</p>
+		<p>POST - "api/v1/management/roles/assign/{user_id}"<br>
+		{<br>
+		"id": ... <br>
+		}<br>
+		</p>
+		<p>DELETE - "api/v1/management/roles/remove/{user_id}"<br>
+		{<br>
+		"id": ... <br>
+		}<br>
+		</p>
+		<p>GET - "api/v1/management/roles"</p>
+		<p>GET - "api/v1/management/roles/{role_id}"</p>
+		<p>DELETE - "api/v1/management/roles/{role_id}"</p>
+		<p>PUT - "api/v1/management/roles/{role_id}"</p>
 	</details>
 </details>
