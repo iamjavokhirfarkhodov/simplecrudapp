@@ -37,4 +37,12 @@ The system has 3 main API routes <br>
 		<p>POST - "api/v1/management/users/enable/{id}"</p>
 		<p>POST - "api/v1/management/users/disable/{id}"</p>
 	</details>
+	<details>
+		<summary>Working with Student table</summary>
+		<p>GET - "api/v1/management/students"</p>
+		<p>GET - "api/v1/management/students/{id}"</p>
+		<p>GET - "api/v1/management/students/by?name=..."</p>
+		<p>Param</p>
+		<p>name = "..."</p>
+	</details>
 </details>
