@@ -26,6 +26,7 @@ The system has 3 main API routes <br>
 
 <details>
 	<summary><strong>Available endpoints</strong></summary>
+	<details>
 	<summary>Management</summary>
 	"api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them <br>
 	<br>
@@ -85,6 +86,7 @@ The system has 3 main API routes <br>
 	DELETE - "api/v1/management/roles/{role_id}" <br>
 	PUT - "api/v1/management/roles/{role_id}" <br>
 	</details>
+ 	</details>
 </details>
 <details>
 <summary>Students</summary>
