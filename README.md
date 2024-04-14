@@ -28,64 +28,64 @@ The system has 3 main API routes <br>
 	<summary><strong>Available endpoints</strong></summary>
 	<details>
 	<summary>Management</summary>
-	"api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them <br>
-	<br>
-	<details>
-	<summary>1). Working with the Users table.</details>
-	POST - "api/v1/management/users/create" <br>
-	Authorization - <jwt_token> <br>
-	{<br>
-    	"username": "....",<br>
-    	"password": "...."<br>
-	}<br>
-	POST - "api/v1/management/users/enable/{id}" <br>
-	POST - "api/v1/management/users/disable/{id}" <br>
-	</details>
-	<details>
-	<summary>2). Work with the Student table</summary>summary>
-	GET - "api/v1/management/students" <br>
-	GET - "api/v1/management/students/{id}" <br>
-	GET - "api/v1/management/students/by?name=..." <br>
-	Param<br>
-	name = "..." <br>
-	</details>
+		"api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them <br>
+		<br>
+		<details>
+		<summary>1). Working with the Users table.</details>
+		POST - "api/v1/management/users/create" <br>
+		Authorization - <jwt_token> <br>
+		{<br>
+	    	"username": "....",<br>
+	    	"password": "...."<br>
+		}<br>
+		POST - "api/v1/management/users/enable/{id}" <br>
+		POST - "api/v1/management/users/disable/{id}" <br>
+		</details>
+		<details>
+		<summary>2). Work with the Student table</summary>summary>
+		GET - "api/v1/management/students" <br>
+		GET - "api/v1/management/students/{id}" <br>
+		GET - "api/v1/management/students/by?name=..." <br>
+		Param<br>
+		name = "..." <br>
+		</details>
 
-	<details>
-	<summary>3). Work with the faculty table</summary>summary>
-	POST - "api/v1/management/faculties"<br>
-	{<br>
-	"name": "....."<br>
-	}<br>
-	GET - "api/v1/management/faculties" <br>
-	GET - "api/v1/management/faculties/{id}" <br>
-	DELETE - "api/v1/management/faculties/{id}" <br>
-	PUT - "api/v1/management/faculties/{id}" <br>
-	{<br>
-    	"name": "....." <br>
-	}<br>
-	</details>
+		<details>
+		<summary>3). Work with the faculty table</summary>summary>
+		POST - "api/v1/management/faculties"<br>
+		{<br>
+		"name": "....."<br>
+		}<br>
+		GET - "api/v1/management/faculties" <br>
+		GET - "api/v1/management/faculties/{id}" <br>
+		DELETE - "api/v1/management/faculties/{id}" <br>
+		PUT - "api/v1/management/faculties/{id}" <br>
+		{<br>
+	    	"name": "....." <br>
+		}<br>
+		</details>
 
-	<details>
-	<summary>4). Working with the table of roles </summary>
-	<br>
-	POST - "api/v1/management/roles" <br>
-	{<br>
-	"name": "ROLE_NAME" <br>
-	}<br>
-	<br>
-	POST - "api/v1/management/roles/assign/{user_id}" <br>
-	{<br>
-	"id": ... <br>
-	}<br>
-	DELETE - "api/v1/management/roles/remove/{user_id}" <br>
-	{<br>
-	"id": ... <br>
-	}<br>
-	GET - "api/v1/management/roles" <br>
-	GET - "api/v1/management/roles/{role_id}" <br>
-	DELETE - "api/v1/management/roles/{role_id}" <br>
-	PUT - "api/v1/management/roles/{role_id}" <br>
-	</details>
+		<details>
+		<summary>4). Working with the table of roles </summary>
+		<br>
+		POST - "api/v1/management/roles" <br>
+		{<br>
+		"name": "ROLE_NAME" <br>
+		}<br>
+		<br>
+		POST - "api/v1/management/roles/assign/{user_id}" <br>
+		{<br>
+		"id": ... <br>
+		}<br>
+		DELETE - "api/v1/management/roles/remove/{user_id}" <br>
+		{<br>
+		"id": ... <br>
+		}<br>
+		GET - "api/v1/management/roles" <br>
+		GET - "api/v1/management/roles/{role_id}" <br>
+		DELETE - "api/v1/management/roles/{role_id}" <br>
+		PUT - "api/v1/management/roles/{role_id}" <br>
+		</details>
  	</details>
 </details>
 <details>
