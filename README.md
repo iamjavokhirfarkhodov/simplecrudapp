@@ -24,6 +24,8 @@ The system has 3 main API routes <br>
 <br>
 <br>
 
+<details>
+<summary># Available endpoints</summary>
 ## MANAGEMENT <br>
 "api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them <br>
 <br>
@@ -107,3 +109,4 @@ POST - "signup/student" <br>
     "faculty": ...., <br>
     "address": "...." <br>
 }
+</details>
