@@ -25,7 +25,7 @@ The system has 3 main API routes <br>
 <br>
 <details>
 	<summary>Management</summary>
-	"api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them <br>
+	<p>"api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them</p>
 	<details>
 		<summary>Working with Users table.</summary>
 	</details>
