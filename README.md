@@ -118,3 +118,4 @@ Login is required to use the APIs. A JWT token is automatically assigned to the 
 	}
 	</p>
 </details>
+<img src="./src/main/resources/static/java.png" alt="Description of the image" width="200" height="100">
