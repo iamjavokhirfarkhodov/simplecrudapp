@@ -26,10 +26,11 @@ The system has 3 main API routes <br>
 
 <details>
 <summary># Available endpoints</summary>
-## MANAGEMENT <br>
+<details>
+<summary>## MANAGEMENT </summary><br>
 "api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them <br>
 <br>
-### 1). Working with the Users table.<br>
+### 1). Working with the Users table.
 POST - "api/v1/management/users/create" <br>
 Authorization - <jwt_token> <br>
 {<br>
@@ -38,17 +39,18 @@ Authorization - <jwt_token> <br>
 }<br>
 POST - "api/v1/management/users/enable/{id}" <br>
 POST - "api/v1/management/users/disable/{id}" <br>
-
-
-### 2). Work with the Student table <br>
+</details>
+<details>
+<summary>### 2). Work with the Student table</summary>summary>
 GET - "api/v1/management/students" <br>
 GET - "api/v1/management/students/{id}" <br>
 GET - "api/v1/management/students/by?name=..." <br>
 Param<br>
 name = "..." <br>
+</details>
 
-
-### 3). Work with the faculty table <br>
+<details>
+<summary>### 3). Work with the faculty table</summary>summary>
 POST - "api/v1/management/faculties"<br>
 {<br>
 	"name": "....."<br>
@@ -60,9 +62,10 @@ PUT - "api/v1/management/faculties/{id}" <br>
 {<br>
     "name": "....." <br>
 }<br>
+</details>
 
-
-### 4). Working with the table of roles <br>
+<details>
+<summary>### 4). Working with the table of roles </summary>
 <br>
 POST - "api/v1/management/roles" <br>
 {<br>
@@ -81,9 +84,9 @@ GET - "api/v1/management/roles" <br>
 GET - "api/v1/management/roles/{role_id}" <br>
 DELETE - "api/v1/management/roles/{role_id}" <br>
 PUT - "api/v1/management/roles/{role_id}" <br>
-
-
-## STUDENTS <br>
+</details>
+<details>
+<summary>## STUDENTS</summary>
 "api/v1/students/**" - With this API, students can get their data, change it and launch their account. <br>
 <br>
 PUT - "api/v1/students/{id}" <br>
@@ -95,8 +98,9 @@ PUT - "api/v1/students/{id}" <br>
 } <br>
 GET - "api/v1/students/{id}" <br>
 DELETE - "api/v1/students/{id}" <br>
-
-## SIGNUP <br>
+</details>
+<details>
+<summary>## SIGNUP</summary>
 "signup/student" - This API is open to everyone for student registration. <br>
 
 POST - "signup/student" <br>
