@@ -88,6 +88,7 @@ The system has 3 main API routes <br>
 		</details>
  	</details>
 </details>
+
 <details>
 <summary>Students</summary>
 "api/v1/students/**" - With this API, students can get their data, change it and launch their account. <br>
@@ -102,6 +103,7 @@ PUT - "api/v1/students/{id}" <br>
 GET - "api/v1/students/{id}" <br>
 DELETE - "api/v1/students/{id}" <br>
 </details>
+
 <details>
 <summary>Sign UP</summary>
 <h3>"signup/student" - This API is open to everyone for student registration. </h3>
