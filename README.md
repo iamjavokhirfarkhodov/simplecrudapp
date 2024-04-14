@@ -85,3 +85,17 @@ The system has 3 main API routes <br>
 		<p>PUT - "api/v1/management/roles/{role_id}"</p>
 	</details>
 </details>
+<details>
+	<summary>Students</summary>
+	<p>"api/v1/students/**" - With this API, students can get their data, change it and launch their account.</p>
+	<p>PUT - "api/v1/students/{id}" <br>
+	{<br>
+	"firstname": "Firstname",<br>
+	"lastname": "Lastname", <br>
+	"birth_date": "1990-01-01", <br>
+	"address": "22 Galaxy" <br>
+	}<br>
+	</p>
+	<p>GET - "api/v1/students/{id}"</p>
+	<p>DELETE - "api/v1/students/{id}"</p>
+</details>
