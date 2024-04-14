@@ -42,7 +42,22 @@ The system has 3 main API routes <br>
 		<p>GET - "api/v1/management/students"</p>
 		<p>GET - "api/v1/management/students/{id}"</p>
 		<p>GET - "api/v1/management/students/by?name=..."</p>
-		<p>Param</p>
-		<p>name = "..."</p>
+		<p>Param name = "..."</p>
+	</details>
+	<details>
+		<summary>Work with the faculty table</summary>
+		<p>POST - "api/v1/management/faculties"<br>
+		{<br>
+		"name": "....."<br>
+		}<br>
+		</p>
+		<p>GET - "api/v1/management/faculties"</p>
+		</p>GET - "api/v1/management/faculties/{id}"</p>
+		<p>DELETE - "api/v1/management/faculties/{id}"</p>
+		<p>PUT - "api/v1/management/faculties/{id}"<br>
+		{<br>
+		"name": "....."<br>
+		}<br>
+		</p>
 	</details>
 </details>
