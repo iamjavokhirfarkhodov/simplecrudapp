@@ -28,5 +28,13 @@ The system has 3 main API routes <br>
 	<p>"api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them</p>
 	<details>
 		<summary>Working with Users table.</summary>
+		<p>POST - "api/v1/management/users/create"</p>
+		<p>Authorization - <jwt_token> </p>
+		<p>{</p>
+		<p>"username": "....",</p>
+		<p>"password": "...."</p>
+		<p>}</p>
+		<p>POST - "api/v1/management/users/enable/{id}"</p>
+		<p>POST - "api/v1/management/users/disable/{id}"</p>
 	</details>
 </details>
