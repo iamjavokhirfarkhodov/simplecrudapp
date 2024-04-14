@@ -99,3 +99,18 @@ The system has 3 main API routes <br>
 	<p>GET - "api/v1/students/{id}"</p>
 	<p>DELETE - "api/v1/students/{id}"</p>
 </details>
+<details>
+	<summary>Sign UP</summary>
+	<p>"signup/student" - This API is open to everyone for student registration.</p>	
+	</p>POST - "signup/student"<br>
+	{<br>
+		"username": "....", <br>
+		"password": "....", <br>
+		"firstname": "....", <br>
+		"lastname": "....", <br>
+		"birth_date": "....", <br>
+		"faculty": ...., <br>
+		"address": "...." <br>
+	}
+	</p>
+</details>
