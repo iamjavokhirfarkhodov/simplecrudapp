@@ -39,7 +39,6 @@ Authorization - <jwt_token> <br>
 }<br>
 POST - "api/v1/management/users/enable/{id}" <br>
 POST - "api/v1/management/users/disable/{id}" <br>
-</details>
 <details>
 <summary>2). Work with the Student table</summary>summary>
 GET - "api/v1/management/students" <br>
@@ -84,6 +83,7 @@ GET - "api/v1/management/roles" <br>
 GET - "api/v1/management/roles/{role_id}" <br>
 DELETE - "api/v1/management/roles/{role_id}" <br>
 PUT - "api/v1/management/roles/{role_id}" <br>
+</details>
 </details>
 <details>
 <summary><strong>Students</strong></summary>
