@@ -33,7 +33,18 @@ public class AppUserRepositoryImplement implements AppUserRepository {
     public AppUser getUserByUserName(String username) {
         String sql = "select * from users where username = ?";
             return template.queryForObject(sql, new AppUserMapper(username, getAuthorities(username)), username);
+//        try {
+//            return Optional.ofNullable(template.queryForObject(sql, new AppUserMapper(username, getAuthorities(username)), username));
+//        } catch (Exception e) {
+//            return Optional.empty();
+//        }
     }
+
+//    @Override
+//    public int create(UserDTO userDTO) {
+//        String sql = "insert into users(username, password, created_at) values(?,?,?)";
+//        return template.update(sql, userDTO.getUsername(), encoder.encode(userDTO.getPassword()), LocalDate.now());
+//    }
 
     @Override
     public List<Roles> getRolesByUsername(String username) {

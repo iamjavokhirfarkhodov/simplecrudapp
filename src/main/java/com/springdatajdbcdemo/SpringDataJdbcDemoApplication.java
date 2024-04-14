@@ -8,7 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class SpringDataJdbcDemoApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext run = SpringApplication.run(SpringDataJdbcDemoApplication.class, args);
+        SpringApplication.run(SpringDataJdbcDemoApplication.class, args);
     }
 
 }

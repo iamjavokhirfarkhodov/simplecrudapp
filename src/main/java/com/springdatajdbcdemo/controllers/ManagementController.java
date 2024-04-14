@@ -33,7 +33,7 @@ public class ManagementController {
         return managementService.disableUserById(id);
     }
 
-    //Students DONE
+    //Students
     @GetMapping("/students")
     public ResponseEntity<?> getStudents() {
         return managementService.getAllStudents();
@@ -49,7 +49,7 @@ public class ManagementController {
         return managementService.getAllStudentsByName(name);
     }
 
-    //Faculty DONE
+    //Faculty
     @PostMapping("/faculties")
     public ResponseEntity<?> createFaculties(@RequestBody Faculty faculty) {
         return managementService.createFaculty(faculty);
@@ -73,7 +73,7 @@ public class ManagementController {
     }
 
 
-    //Roles DONE
+    //Roles
     @PostMapping("/roles")
     public ResponseEntity<?> createRole(@RequestBody Roles role){
         return managementService.createRole(role);
