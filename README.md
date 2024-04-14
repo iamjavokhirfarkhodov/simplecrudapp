@@ -3,6 +3,7 @@
 Login is required to use the APIs. A JWT token is automatically assigned to the user upon successful login, and all subsequent requests are processed only if the token is found. Otherwise, the server will return a 403 response. <br>
 
 <p>The system has 4 main API routes<br>
+- "/login"<br>
 - "api/v1/management/**"<br>
 - "api/v1/students/**"<br>
 - "signup/student"<br>
