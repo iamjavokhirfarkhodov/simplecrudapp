@@ -30,7 +30,8 @@ The system has 3 main API routes <br>
 <summary>Management</summary>
 "api/management/**" - only system admins can use this path. You can access the API paths available in the system and make requests to them <br>
 <br>
-1). Working with the Users table.
+<details>
+<summary>1). Working with the Users table.</details>
 POST - "api/v1/management/users/create" <br>
 Authorization - <jwt_token> <br>
 {<br>
@@ -39,6 +40,7 @@ Authorization - <jwt_token> <br>
 }<br>
 POST - "api/v1/management/users/enable/{id}" <br>
 POST - "api/v1/management/users/disable/{id}" <br>
+</details>
 <details>
 <summary>2). Work with the Student table</summary>summary>
 GET - "api/v1/management/students" <br>
@@ -86,7 +88,7 @@ PUT - "api/v1/management/roles/{role_id}" <br>
 </details>
 </details>
 <details>
-<summary><strong>Students</strong></summary>
+<summary>Students</summary>
 "api/v1/students/**" - With this API, students can get their data, change it and launch their account. <br>
 <br>
 PUT - "api/v1/students/{id}" <br>
